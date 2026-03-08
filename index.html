@@ -1,92 +1,186 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Amine — AI Student</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <div class="header">
-
         <div class="logo">
-            <h3>LoGo</h3>
+            <h3>Amine<span>.</span></h3>
         </div>
-
         <div class="nav-section">
             <nav class="sections">
-                <a href="" class="link">Home</a>
+                <a href="#home" class="link">Home</a>
                 <a href="#projects" class="link">Projects</a>
-                <a href="" class="link">About</a>
+                <a href="#badges" class="link">Badges</a>
             </nav>
         </div>
-        
     </div>
 
-    <div class="main">
+    <!-- HERO -->
+    <div class="main" id="home">
+
+        <div class="hero-glow"></div>
+        <div class="hero-dots"></div>
 
         <div class="text">
-            
-            <div>
-                <p>
-                    Hey , Im Amine
-                </p>
-                <p> 
-                    Im Ai Student  
-                </p>
-            </div>
-
+            <span class="eyebrow">// AI Student & Developer</span>
+            <p>Hey, I'm Amine</p>
+            <p class="sub">AI Student</p>
             <div class="button">
-                <div class="btn" >
-                <a href="">Join me on Github</a>
+                <div class="btn">
+                    <a href="https://github.com/" target="_blank">⌥ GitHub</a>
                 </div>
-
-                <div class="btn" >
-                <a href="">Join me on LinkedIn</a>
+                <div class="btn btn-outline">
+                    <a href="https://linkedin.com/" target="_blank">in LinkedIn</a>
                 </div>
-
             </div>
-            
         </div>
 
         <div class="profile-image">
-            <img src="./images/profile.jpg" alt="">
+            <div class="avatar-ring">
+                <img src="./images/profile.jpg" alt="Amine">
+            </div>
+            
         </div>
 
     </div>
 
+    <!-- PROJECTS -->
     <div id="projects" class="projects-section">
-
         <div class="tilte">
+            <span class="section-label">Selected Work</span>
             <h1>Projects</h1>
         </div>
 
         <div class="projects">
+
             <div class="project-cards">
-                <div class="project-image" > <img src="./images/android.png" alt=""></div>
-                <div class="description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed distinctio doloremque dolorum deleniti voluptatum consectetur porro pariatur inventore corporis, minus laboriosam nemo delectus amet ab asperiores accusamus facilis quas excepturi!</p></div>
-                <div class="link">show more</div>
+                <div class="project-image">
+                    <img src="./images/android.png" alt="Android Security">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="description">
+                    <span class="card-meta">Android · Security</span>
+                    <h3>Android Security Scanner</h3>
+                    <p>Static analysis tool for detecting vulnerabilities in Android apps using ML-based detection.</p>
+                </div>
+                <div class="link"><a href="">Show More →</a></div>
             </div>
+
             <div class="project-cards">
-                <div class="project-image"><img src="./images/attendence.jpeg" alt=""></div>
-                <div class="description"></div>
-                <div class="link">show more</div>
+                <div class="project-image">
+                    <img src="./images/attendence.jpeg" alt="AI Attendance">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="description">
+                    <span class="card-meta">Computer Vision · AI</span>
+                    <h3>AI Attendance System</h3>
+                    <p>Real-time facial recognition attendance tracker using deep learning.</p>
+                </div>
+                <div class="link"><a href="">Show More →</a></div>
             </div>
+
             <div class="project-cards">
-                <div class="project-image"></div>
-                <div class="description"></div>
-                <div class="link">show more</div>
+                <div class="project-image no-img"></div>
+                <div class="description">
+                    <span class="card-meta">NLP · Deep Learning</span>
+                    <h3>Sentiment Analysis</h3>
+                    <p>Transformer-based NLP model for Arabic and French text classification.</p>
+                </div>
+                <div class="link"><a href="">Show More →</a></div>
             </div>
+
             <div class="project-cards">
-                <div class="project-image"></div>
-                <div class="description"></div>
-                <div class="link">show more</div>
+                <div class="project-image no-img"></div>
+                <div class="description">
+                    <span class="card-meta">Networking · Cisco</span>
+                    <h3>Network Simulator</h3>
+                    <p>Enterprise-level topology using Cisco Packet Tracer with routing protocols.</p>
+                </div>
+                <div class="link"><a href="">Show More →</a></div>
             </div>
+
+        </div>
+    </div>
+
+    <!-- BADGES -->
+    <div id="badges" class="badges-section">
+        <div class="badges-title">
+            <span class="section-label light">Credentials</span>
+            <h1>Certifications & Badges</h1>
         </div>
 
+        <div class="badges-track-wrapper">
+            <div class="badges-track">
+
+                <div class="badge-card">
+                    <img src="./images/network.png" alt="Cisco Badge">
+                    <p class="badge-name">Network Basics</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/sec.png" alt="Cisco Badge">
+                    <p class="badge-name">Cybersecurity</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/py.png" alt="Cisco Badge">
+                    <p class="badge-name">Python Essentials</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/badge4.png" alt="Badge">
+                    <p class="badge-name">Machine Learning</p>
+                    <span class="badge-issuer">Coursera</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/cy.png" alt="Badge">
+                    <p class="badge-name">Deep Learning</p>
+                    <span class="badge-issuer">DeepLearning.AI</span>
+                </div>
+                <!-- duplicates for seamless loop -->
+                <div class="badge-card">
+                    <img src="./images/network.png" alt="Cisco Badge">
+                    <p class="badge-name">Network Basics</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/sec.png" alt="Cisco Badge">
+                    <p class="badge-name">Cybersecurity</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/py.png" alt="Cisco Badge">
+                    <p class="badge-name">Python Essentials</p>
+                    <span class="badge-issuer">Cisco</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/badge4.png" alt="Badge">
+                    <p class="badge-name">Machine Learning</p>
+                    <span class="badge-issuer">Coursera</span>
+                </div>
+                <div class="badge-card">
+                    <img src="./images/cy.png" alt="Badge">
+                    <p class="badge-name">Deep Learning</p>
+                    <span class="badge-issuer">DeepLearning.AI</span>
+                </div>
+
+            </div>
+        </div>
     </div>
-    
-    
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <span>© 2025 Amine — AI Student</span>
+    </div>
+
 </body>
 </html>
